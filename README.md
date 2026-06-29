@@ -1,4 +1,4 @@
-# AlgoVis
+# AlgoViz
 
 Algorithm visualizer with the ability to save and share
 
