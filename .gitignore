@@ -4,3 +4,7 @@ node_modules/
 dist/
 .next/
 *.log
+
+.claude/
+CLAUDE.md
+AGENTS.md
