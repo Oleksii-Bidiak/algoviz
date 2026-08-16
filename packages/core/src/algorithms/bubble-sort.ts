@@ -1,9 +1,8 @@
-export type SortStep =
-  | { kind: "compare"; firstPos: number; secondPos: number }
-  | { kind: "swap"; firstPos: number; secondPos: number }
-  | { kind: "fixed"; pos: number };
+import type { BubbleSortStep } from "./step";
 
-export function* bubbleSort(inputArr: readonly number[]): Generator<SortStep> {
+export function* bubbleSort(
+  inputArr: readonly number[],
+): Generator<BubbleSortStep> {
   const arr = [...inputArr];
 
   for (let i = arr.length - 1; i >= 0; i--) {
