@@ -1,7 +1,15 @@
 {
+  "name": "algoviz",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
   "scripts": {
     "format:check": "prettier . --check",
     "format:fix": "prettier . --write",
+    "test": "npm run test --workspaces --if-present",
+    "typecheck": "npm run typecheck --workspaces --if-present",
     "prepare": "husky"
   },
   "devDependencies": {
